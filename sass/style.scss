@@ -1,0 +1,19 @@
+.content {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.loaded {
+  opacity: 1;
+}
+.btn {
+  min-width: 90px;
+}
+ul {
+  padding: 0;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+.clear-complete {
+  margin-bottom: 30px;
+}
