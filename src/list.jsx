@@ -6,7 +6,7 @@ module.exports = React.createClass({
   renderList: function() {
     if (this.props.items.length === 0) {
       return <h4>
-        Add a todo to get started.
+        Add a todo item and the server refreshes in real time using FireBase.
       </h4>
     } else {
       var children = [];
