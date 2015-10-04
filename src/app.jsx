@@ -46,7 +46,7 @@ var App = React.createClass({
           type="button"
           onClick={this.onDeleteDoneClick}
           className="btn btn-primary">
-        clear Complete
+        clear Completed Items
       </button>
       </div>
     }

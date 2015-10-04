@@ -3,7 +3,8 @@ var React = require('react');
 module.exports = React.createClass({
   getInitialState: function() {
     return {
-      text: ''
+      text: '',
+      addButtonText: 'Enter a ToDo'
     }
   },
   render: function() {
@@ -18,7 +19,7 @@ module.exports = React.createClass({
           onClick={this.handleClick}
           className="btn btn-success"
           type="button">
-          Add
+          {this.state.addButtonText}
         </button>
       </span>
     </div>
@@ -32,5 +33,10 @@ module.exports = React.createClass({
   },
   handleInputChange: function(event) {
     this.setState({text: event.target.value});
+    if (event.target.value !== '') {
+      this.setState({
+        addButtonText: 'Add to ToDo List'
+      });
+    }
   }
 });
