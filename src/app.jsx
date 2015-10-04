@@ -22,7 +22,7 @@ var App = React.createClass({
     return <div className="row panel panel-default">
       <div className="col-md-8 col-md-offset-2">
         <h2 className="text-center">
-          To-Do List
+          ToDo List
         </h2>
         <Header itemsStore={this.firebaseRefs.items} />
         <hr></hr>
